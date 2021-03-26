@@ -1,0 +1,15 @@
+<?php
+#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|
+#|                                                        #|
+#|       JsBasics by  » Daniel, Carlos y Ronald «         #|
+#|    Copyright © 2020. Todos los derechos reservados.    #|
+#|														  #|
+#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|
+	ob_start();
+	require_once '../global.php';
+	$a = $_GET['l'];
+	$b = $_GET['c'];
+	$e = $_GET['id'];
+	$Functions->FinalizarLeccion($a,$b,$e);
+	ob_end_flush();
+?>
